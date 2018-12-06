@@ -3,29 +3,17 @@ package com.sample
 import com.sample.DroolsTest.Message;
 import com.sample.DroolsTest.Question;
 
-
-rule "Init"
-	when 
-		q : Question( is_init != null )
-	then
-		Message.RomanticUI.setGUI(q);
-		q.setInit(null);
-		System.out.println("First question!");
-end
-
-/*
 rule "Init"
     when
-        not exists Question();
+        not Question();
     then
         String[] possib = {"My main squeeze","My family"};
         Question n = new Question("WHO ARE YOU WATCHING IT WITH?",possib);
-        n.setActiveQuestion(n);
-        n.setGUI(n.getContent(),n.getAnswers());
+		Message.RomanticUI.setGUI(n);
         insert (n);
         System.out.println("First question!");
 end
-*/
+
 
 rule "First"
 	when 
@@ -61,6 +49,45 @@ rule "Third"
 		q.setAct(false);
 		String[] possib = {"About face","NO"};
 		Question n = new Question("MILILTARY FAN?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "Fourth"
+	when 
+		q : Question( content == "MILILTARY FAN?", 
+			picked_answer == "NO", act )
+	then
+		q.setAct(false);
+		String[] possib = {"Girls have muscle, too!","Male"};
+		Question n = new Question("MALE OR FEMALE LEAD?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "Fifth"
+	when 
+		q : Question( content == "ACTION PACKED OR THOUGHT PROVOKING?", 
+			picked_answer == "Brains & Beauty", act )
+	then
+		q.setAct(false);
+		String[] possib = {"YES","NO"};
+		Question n = new Question("STARRING AN IT GIRL?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "Sixth"
+	when 
+		q : Question( content == "STARRING AN IT GIRL?", 
+			picked_answer == "NO", act )
+	then
+		q.setAct(false);
+		String[] possib = {"Oui","NO"};
+		Question n = new Question("FOREIGN FILM?",possib);
 		Message.RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);

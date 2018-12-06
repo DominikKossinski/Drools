@@ -28,18 +28,10 @@ public class DroolsTest {
 	        // From the kie services, a container is created from the classpath
     	    KieContainer kContainer = ks.getKieClasspathContainer();    
         	KieSession kSession = kContainer.newKieSession("ksession-rules");     	
-       	
-        	String q = "WHO ARE YOU WATCHING IT WITH?";
-        	String[] possibilities = { "My main squeeze", "My family"};
-        	Question question = new Question(q, possibilities);			//Dodaje do pamiêci pierwsze pytanie
-        	question.setInit("1");
         	
-        	FactHandle handle = kSession.insert(question);
-        	new Message().init(true, handle, kSession);
+        	new Message().init(true, kSession);
             kSession.fireAllRules();
             
-        	
-        	
         } catch (Throwable t) {
             t.printStackTrace();
         }
@@ -48,14 +40,12 @@ public class DroolsTest {
     public static class Message {
     	
     	public static Question active;
-		private static FactHandle handle;
 		private static KieSession kSession;
 
-		public void init( boolean exitOnClose, FactHandle handle, KieSession kSession) {
+		public void init( boolean exitOnClose, KieSession kSession) {
 
 	        RomanticUI ui = new RomanticUI( );
 	        ui.createAndShowGUI(exitOnClose);
-	        this.handle = handle;
 	        this.kSession = kSession;
 		}
 
@@ -174,13 +164,13 @@ public class DroolsTest {
 				if(e.getSource() == answers[0]){
 					
 					active.setPickedAnswer(active.getAnswers()[0]);
-					kSession.update(handle, active);
+					kSession.update(kSession.getFactHandle(active), active);
 					kSession.fireAllRules(); 
 				}
 				else if(e.getSource() == answers[1]){
 					
 					active.setPickedAnswer(active.getAnswers()[1]);
-					kSession.update(handle, active);
+					kSession.update(kSession.getFactHandle(active), active);
 					kSession.fireAllRules();
 				}
 			}
