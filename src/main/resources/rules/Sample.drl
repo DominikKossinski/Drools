@@ -236,6 +236,32 @@ rule "17-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
+rule "19-th"
+	when
+		q: Question(content == "WHO ARE YOU WATCHING IT WITH?", picked_answer == "My family")
+	then
+		q.setAct(false);
+		String[] possib = {"Yes", "No"};
+		Question n = new Question("DO YOU LIKE ANIMATION?", possib);
+		Message.RomanticUI.setGUI(n);
+		insert(n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "20-th"
+	when
+		q: Question(content == "DO YOU LIKE ANIMATION?", picked_answer == "Yes")
+	then
+		q.setAct(false);
+		String[] possib = {"What about Burton?", "Pixar", "Disney"};
+		Question n = new Question("PIXAR OR DISNEY?", possib);
+		Message.RomanticUI.setGUI(n);
+		insert(n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+
+
 /**
 Here starts the rules with the decision about the film
 **/
@@ -248,4 +274,12 @@ rule "18-th"
 		q.setAct(false);
 		String[] possib = {"I love explosions","Brains & Beauty","Let's stick to the 'com' in 'romcom'"};
 		Message.RomanticUI.setGUI_answer(q, "The Notebook");
+end
+
+rule "21-th"
+	when
+		q: Question(content == "PIXAR OR DISNEY?", picked_answer == "What about Burton?")
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Nightmare Before Christmas");
 end
