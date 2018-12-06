@@ -1,20 +1,67 @@
 package com.sample
  
 import com.sample.DroolsTest.Message;
- 
-rule "Hello World"
-    when
-        m : Message( status == Message.HELLO, myMessage : message )
-    then
-        System.out.println( myMessage );
-        m.setMessage( "Goodbye cruel world" );
-        m.setStatus( Message.GOODBYE );
-        update( m );
+import com.sample.DroolsTest.Question;
+
+
+rule "Init"
+	when 
+		q : Question( is_init != null )
+	then
+		Message.RomanticUI.setGUI(q);
+		q.setInit(null);
+		System.out.println("First question!");
 end
 
-rule "GoodBye"
+/*
+rule "Init"
     when
-        Message( status == Message.GOODBYE, myMessage : message )
+        not exists Question();
     then
-        System.out.println( myMessage );
+        String[] possib = {"My main squeeze","My family"};
+        Question n = new Question("WHO ARE YOU WATCHING IT WITH?",possib);
+        n.setActiveQuestion(n);
+        n.setGUI(n.getContent(),n.getAnswers());
+        insert (n);
+        System.out.println("First question!");
+end
+*/
+
+rule "First"
+	when 
+		q : Question( content == "WHO ARE YOU WATCHING IT WITH?", 
+			picked_answer == "My main squeeze", act)
+	then
+		q.setAct(false);
+		String[] possib = {"YES","NO"};
+		Question n = new Question("DO YOU CARE IF HE ENJOYS IT?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "Second"
+	when 
+		q : Question( content == "DO YOU CARE IF HE ENJOYS IT?",
+		 	picked_answer == "YES", act )
+	then
+		q.setAct(false);
+		String[] possib = {"I love explosions","Brains & Beauty","Let's stick to the 'com' in 'romcom'"};
+		Question n = new Question("ACTION PACKED OR THOUGHT PROVOKING?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "Third"
+	when 
+		q : Question( content == "ACTION PACKED OR THOUGHT PROVOKING?", 
+			picked_answer == "I love explosions", act )
+	then
+		q.setAct(false);
+		String[] possib = {"About face","NO"};
+		Question n = new Question("MILILTARY FAN?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
