@@ -239,3 +239,13 @@ end
 /**
 Here starts the rules with the decision about the film
 **/
+
+rule "18-th"
+	when 
+		q : Question( content == "DO YOU CARE IF HE ENJOYS IT?",
+		 	picked_answer == "NO", act )
+	then
+		q.setAct(false);
+		String[] possib = {"I love explosions","Brains & Beauty","Let's stick to the 'com' in 'romcom'"};
+		Message.RomanticUI.setGUI_answer(q, "The Notebook");
+end

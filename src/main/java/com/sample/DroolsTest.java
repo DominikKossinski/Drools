@@ -53,8 +53,8 @@ public class DroolsTest {
 			
 			private static final long serialVersionUID = 510l;
 	        
-	        private static JButton answers[] = new JButton[3];	//Mo¿liwe odpowiedzi
-			private static JLabel l2;							//Treœæ pytania
+	        private static JButton buttons[] = new JButton[3];	//Mozliwe odpowiedzi
+			private static JLabel l2, l1;							//Tresc pytania
 
 			public RomanticUI() {
 				
@@ -69,7 +69,7 @@ public class DroolsTest {
 					tmp.setHorizontalTextPosition(SwingConstants.CENTER);
 					tmp.setBounds(20 + 260*i, 450, 250, 100);
 					tmp.addActionListener(this);
-					answers[i] = tmp;		//tablica z przyciskami do odpowiedzi
+					buttons[i] = tmp;		//tablica z przyciskami do odpowiedzi
 					Border border = new CompoundBorder(
 						    LineBorder.createBlackLineBorder(), 
 						    LineBorder.createBlackLineBorder());
@@ -79,7 +79,7 @@ public class DroolsTest {
 																//Label z pytaniem
 
 				ImageIcon iconLogo = new ImageIcon("rom.png");
-				JLabel l1 = new JLabel("", SwingConstants.CENTER);
+				l1 = new JLabel("", SwingConstants.CENTER);
 				//l1.setBorder(LineBorder.createGrayLineBorder());
 				l1.setBounds(10,10,780,300);
 				l1.setIcon(iconLogo);
@@ -124,21 +124,34 @@ public class DroolsTest {
 				
 				l2.setText(question);
 				
-				if(answers.length - possibilities.length != 0){	//Mniejsza ilosc odp ni¿ 3 (2)
-					answers[2].setVisible(false);	
+				if(buttons.length - possibilities.length != 0){	//Mniejsza ilosc odp ni¿ 3 (2)
+					buttons[2].setVisible(false);	
 					setButtons(2);
 				}
 				
 				else{											//Dok³adnie 3 odp
-					answers[2].setVisible(true);
+					buttons[2].setVisible(true);
 					setButtons(3);
 				}
 				
 				for(int i = 0; i < possibilities.length; i++){
 					
-					answers[i].setText(possibilities[i]);	
+					buttons[i].setText(possibilities[i]);	
 				}
 			}
+			
+			public static void setGUI_answer(Question n, String s){
+				
+				for(int i = 0; i < n.answers.length; i++){
+					buttons[i].setVisible(false);
+				}
+				l2.setText(s);
+				l2.setLocation(new Point(10,450));
+				ImageIcon icon = new ImageIcon(s+".jpg");
+				l1.setIcon(icon);
+				l1.setLocation(new Point(10,100));
+			}
+			
 
 			private static void setButtons(int i) {		//Zmiana szerokosci buttona w zaleznosci od ilosci mozliwosci
 				int width = 0;
@@ -154,20 +167,20 @@ public class DroolsTest {
 				}
 				
 				for(int j = 0; j < i; j++){
-					answers[j].setBounds(20 + (width+10)*j, 450, width, 100);
-					answers[j].setFont(new Font("Times New Roman", 1, fontSize));
+					buttons[j].setBounds(20 + (width+10)*j, 450, width, 100);
+					buttons[j].setFont(new Font("Times New Roman", 1, fontSize));
 				}
 			}
 
 			public void actionPerformed(ActionEvent e) {
 				
-				if(e.getSource() == answers[0]){
+				if(e.getSource() == buttons[0]){
 					
 					active.setPickedAnswer(active.getAnswers()[0]);
 					kSession.update(kSession.getFactHandle(active), active);
 					kSession.fireAllRules(); 
 				}
-				else if(e.getSource() == answers[1]){
+				else if(e.getSource() == buttons[1]){
 					
 					active.setPickedAnswer(active.getAnswers()[1]);
 					kSession.update(kSession.getFactHandle(active), active);
