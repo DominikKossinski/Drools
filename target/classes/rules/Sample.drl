@@ -15,7 +15,7 @@ rule "Init"
 end
 
 
-rule "First"
+rule "1-st"
 	when 
 		q : Question( content == "WHO ARE YOU WATCHING IT WITH?", 
 			picked_answer == "My main squeeze", act)
@@ -28,7 +28,7 @@ rule "First"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "Second"
+rule "2-nd"
 	when 
 		q : Question( content == "DO YOU CARE IF HE ENJOYS IT?",
 		 	picked_answer == "YES", act )
@@ -41,7 +41,7 @@ rule "Second"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "Third"
+rule "3-rd"
 	when 
 		q : Question( content == "ACTION PACKED OR THOUGHT PROVOKING?", 
 			picked_answer == "I love explosions", act )
@@ -54,7 +54,7 @@ rule "Third"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "Fourth"
+rule "4-th"
 	when 
 		q : Question( content == "MILILTARY FAN?", 
 			picked_answer == "NO", act )
@@ -67,7 +67,7 @@ rule "Fourth"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "Fifth"
+rule "5-th"
 	when 
 		q : Question( content == "ACTION PACKED OR THOUGHT PROVOKING?", 
 			picked_answer == "Brains & Beauty", act )
@@ -80,7 +80,7 @@ rule "Fifth"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "Sixth"
+rule "6-th"
 	when 
 		q : Question( content == "STARRING AN IT GIRL?", 
 			picked_answer == "NO", act )
@@ -92,3 +92,150 @@ rule "Sixth"
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
+
+rule "7-th"
+	when 
+		q : Question( content == "FOREIGN FILM?", 
+			picked_answer == "NO", act )
+	then
+		q.setAct(false);
+		String[] possib = {"Not crying... just allergies", "Prefer to laugh"};
+		Question n = new Question("TERAR JERKER?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "8-th"
+	when 
+		q : Question( content == "TERAR JERKER FILM?", 
+			picked_answer == "Prefer to laugh", act )
+	then
+		q.setAct(false);
+		String[] possib = {"NO", "Yummy"};
+		Question n = new Question("DO YOU LIKE BEER?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "9-th"
+	when 
+		q : Question( content == "DO YOU LIKE BEER?", 
+			picked_answer == "NO", act )
+	then
+		q.setAct(false);
+		String[] possib = {"Pass", "Of course!"};
+		Question n = new Question("DO YOU LIKE ADAM SANDLER?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "10-th"
+	when 
+		q : Question( content == "DO YOU LIKE ADAM SANDLER?", 
+			picked_answer == "Pass", act )
+	then
+		q.setAct(false);
+		String[] possib = {"This one time...", "Nice girls never get the guy"};
+		Question n = new Question("GOOD OR BAD GIRL?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "11-th"
+	when 
+		q : Question( content == "DO YOU LIKE ADAM SANDLER?", 
+			picked_answer == "Of course!", act )
+	then
+		q.setAct(false);
+		String[] possib = {"Classic Adam!", "Let's go new"};
+		Question n = new Question("90s or 2000s SANDLER?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "12-th"
+	when 
+		q : Question( content == "ACTION PACKED OR THOUGHT PROVOKING?", 
+			picked_answer == "Let's stick to the 'com' in 'romcom'", act )
+	then
+		q.setAct(false);
+		String[] possib = {"Yes, please!","Pass"};
+		Question n = new Question("JUDD APATOW FILM?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "13-th"
+	when 
+		q : Question( content == "JUDD APATOW FILM?", 
+			picked_answer == "Yes, please!", act )
+	then
+		q.setAct(false);
+		String[] possib = {"Yes","Nah"};
+		Question n = new Question("THINKING OF MARRIAGE?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "14-th"
+	when 
+		q : Question( content == "THINKING OF MARRIAGE?", 
+			picked_answer == "Nah", act )
+	then
+		q.setAct(false);
+		String[] possib = {"There's humor in sorrow","I see where this is headed"};
+		Question n = new Question("BROKEN UP OR KNOCKED UP?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "15-th"
+	when 
+		q : Question( content == "JUDD APATOW FILM?", 
+			picked_answer == "Pass", act )
+	then
+		q.setAct(false);
+		String[] possib = {"Bromance is the best","Girl power!"};
+		Question n = new Question("GUYS ONLY?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "16-th"
+	when 
+		q : Question( content == "GUYS ONLY?", 
+			picked_answer == "Bromance is the best", act )
+	then
+		q.setAct(false);
+		String[] possib = {"Ya man!","NO"};
+		Question n = new Question("DO YOU LIKE FAKE JAMAICAN ACCENTS?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "17-th"
+	when 
+		q : Question( content == "GUYS ONLY?", 
+			picked_answer == "Girl power!", act )
+	then
+		q.setAct(false);
+		String[] possib = {"She's smitten!","She may be a little unaware"};
+		Question n = new Question("IS THE GIRL IN LOVE?",possib);
+		Message.RomanticUI.setGUI(n);
+		insert (n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+/**
+Here starts the rules with the decision about the film
+**/
