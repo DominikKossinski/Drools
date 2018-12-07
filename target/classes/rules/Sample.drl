@@ -236,7 +236,7 @@ rule "17-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "19-th"
+rule "18-th"
 	when
 		q: Question(content == "WHO ARE YOU WATCHING IT WITH?", picked_answer == "My family")
 	then
@@ -248,7 +248,7 @@ rule "19-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "20-th"
+rule "19-th"
 	when
 		q: Question(content == "DO YOU LIKE ANIMATION?", picked_answer == "Yes")
 	then
@@ -266,13 +266,12 @@ end
 Here starts the rules with the decision about the film
 **/
 
-rule "18-th"
+rule "20-th"
 	when 
 		q : Question( content == "DO YOU CARE IF HE ENJOYS IT?",
 		 	picked_answer == "NO", act )
 	then
 		q.setAct(false);
-		String[] possib = {"I love explosions","Brains & Beauty","Let's stick to the 'com' in 'romcom'"};
 		Message.RomanticUI.setGUI_answer(q, "The Notebook");
 end
 
@@ -282,4 +281,157 @@ rule "21-th"
 	then
 		q.setAct(false);
 		Message.RomanticUI.setGUI_answer(q, "Nightmare Before Christmas");
+end
+
+rule "22-th"
+	when 
+		q : Question( content == "MILILTARY FAN?", 
+			picked_answer == "About face", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Top Gun");
+end
+
+rule "23-th"
+	when 
+		q : Question( content == "STARRING AN IT GIRL?", 
+			picked_answer == "YES", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Silver Linings Playbooks");
+end
+
+rule "24-th"
+	when 
+		q : Question( content == "MALE OR FEMALE LEAD?", 
+			picked_answer == "Girls have muscle, too!", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Mr. and Mrs. Smith");
+end
+
+rule "25-th"
+	when 
+		q : Question( content == "MALE OR FEMALE LEAD?", 
+			picked_answer == "Male", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Bourne Identity");
+end
+
+rule "26-th"
+	when 
+		q : Question( content == "FOREIGN FILM?", 
+			picked_answer == "Oui", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Amelie");
+end
+
+rule "27-th"
+	when 
+		q : Question( content == "THINKING OF MARRIAGE?", 
+			picked_answer == "Yes", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "This is 40");
+end
+
+rule "28-th"
+	when 
+		q : Question( content == "TERAR JERKER FILM?", 
+			picked_answer == "Not crying... just allergies", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Eternal Sunshine of the Spotless Mind");
+end
+
+rule "29-th"
+	when 
+		q : Question( content == "BROKEN UP OR KNOCKED UP?", 
+			picked_answer == "There's humor in sorrow", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Forgetting Sarah Marshall");
+end
+
+rule "30-th"
+	when 
+		q : Question( content == "BROKEN UP OR KNOCKED UP?", 
+			picked_answer == "I see where this is headed", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Knocked Up");
+end
+
+rule "31-th"
+	when 
+		q : Question( content == "DO YOU LIKE FAKE JAMAICAN ACCENTS?", 
+			picked_answer == "Ya man!", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "I Love You, Man");
+end
+
+rule "32-th"
+	when 
+		q : Question( content == "DO YOU LIKE FAKE JAMAICAN ACCENTS?", 
+			picked_answer == "NO", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Don Jon");
+end
+
+rule "33-th"
+	when 
+		q : Question( content == "IS THE GIRL IN LOVE?", 
+			picked_answer == "She's smitten!", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Wedding Crashes");
+end
+
+rule "34-th"
+	when 
+		q : Question( content == "IS THE GIRL IN LOVE?", 
+			picked_answer == "She may be a little unaware", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "There's Something About Mary");
+end
+
+rule "35-th"
+	when 
+		q : Question( content == "GOOD OR BAD GIRL?", 
+			picked_answer == "This one time...", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "American Pie");
+end
+
+rule "36-th"
+	when 
+		q : Question( content == "GOOD OR BAD GIRL?", 
+			picked_answer == "Nice girls never get the guy", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Girl Next Door");
+end
+
+rule "37-th"
+	when 
+		q : Question( content == "90s or 2000s SANDLER?", 
+			picked_answer == "Classic Adam!", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Wedding Singer");
+end
+
+rule "38-th"
+	when 
+		q : Question( content == "90s or 2000s SANDLER?", 
+			picked_answer == "Let's go new", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Just Go With It");
 end

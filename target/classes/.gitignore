@@ -1,2 +1,5 @@
-/rules
-/com
+/META-INF/
+/com/
+/lint.txt
+/logback-test.xml
+/rules/
