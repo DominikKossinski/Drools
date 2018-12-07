@@ -186,6 +186,11 @@ public class DroolsTest {
 					kSession.update(kSession.getFactHandle(active), active);
 					kSession.fireAllRules();
 				}
+				else if(e.getSource() == buttons[2]){
+					active.setPickedAnswer(active.getAnswers()[2]);
+					kSession.update(kSession.getFactHandle(active), active);
+					kSession.fireAllRules();
+				}
 			}
 		}
     }

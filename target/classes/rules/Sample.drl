@@ -108,7 +108,7 @@ end
 
 rule "8-th"
 	when 
-		q : Question( content == "TERAR JERKER FILM?", 
+		q : Question( content == "TERAR JERKER?", 
 			picked_answer == "Prefer to laugh", act )
 	then
 		q.setAct(false);
@@ -434,4 +434,13 @@ rule "38-th"
 	then
 		q.setAct(false);
 		Message.RomanticUI.setGUI_answer(q, "Just Go With It");
+end
+
+rule "39-th"
+	when 
+		q : Question( content == "DO YOU LIKE BEER?", 
+			picked_answer == "Yummy", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Drinking Buddies");
 end
