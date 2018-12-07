@@ -238,7 +238,7 @@ end
 
 rule "18-th"
 	when
-		q: Question(content == "WHO ARE YOU WATCHING IT WITH?", picked_answer == "My family")
+		q: Question(content == "WHO ARE YOU WATCHING IT WITH?", picked_answer == "My family", act)
 	then
 		q.setAct(false);
 		String[] possib = {"Yes", "No"};
@@ -250,7 +250,7 @@ end
 
 rule "19-th"
 	when
-		q: Question(content == "DO YOU LIKE ANIMATION?", picked_answer == "Yes")
+		q: Question(content == "DO YOU LIKE ANIMATION?", picked_answer == "Yes", act)
 	then
 		q.setAct(false);
 		String[] possib = {"What about Burton?", "Pixar", "Disney"};
@@ -259,6 +259,121 @@ rule "19-th"
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
+
+rule "40-th"
+	when
+		q: Question(content == "PIXAR OR DISNEY?", picked_answer == "Pixar", act)
+	then
+		q.setAct(false);
+		String[] possib = {"Robots", "Humans"};
+		Question n = new Question("WITH ROBOTS OR HUMANS?", possib);
+		Message.RomanticUI.setGUI(n);
+		insert(n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "43-th"
+	when
+		q: Question(content == "PIXAR OR DISNEY?", picked_answer == "Disney", act)
+	then
+		q.setAct(false);
+		String[] possib = {"Fighter", "Lover"};
+		Question n = new Question("ARE YOU A LOVER OR A FIGHTER?", possib);
+		Message.RomanticUI.setGUI(n);
+		insert(n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "44-th"
+	when
+		q: Question(content == "DO YOU LIKE ANIMATION?", picked_answer == "No", act)
+	then
+		q.setAct(false);
+		String[] possib = {"I wish it was Christmas everyday", "Not really"};
+		Question n = new Question("DO THE HOLIDAYS MAKE YOU SWOON?", possib);
+		Message.RomanticUI.setGUI(n);
+		insert(n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "45-th"
+	when
+		q: Question(content == "DO THE HOLIDAYS MAKE YOU SWOON?", 
+			picked_answer == "I wish it was Christmas everyday", act)
+	then
+		q.setAct(false);
+		String[] possib = {"Maybe something more modern", "Always love the classics"};
+		Question n = new Question("DO YOU LIKE BLACK & WHITE FILMS?", possib);
+		Message.RomanticUI.setGUI(n);
+		insert(n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "46-th"
+	when
+		q: Question(content == "DO YOU LIKE BLACK & WHITE FILMS?", 
+			picked_answer == "Maybe something more modern", act)
+	then
+		q.setAct(false);
+		String[] possib = {"More than two and it's hard to follow", "I love complexity"};
+		Question n = new Question("HOW MANY LOVE TRIANGLES?", possib);
+		Message.RomanticUI.setGUI(n);
+		insert(n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "47-th"
+	when
+		q: Question(content == "DO THE HOLIDAYS MAKE YOU SWOON?", 
+			picked_answer == "Not really", act)
+	then
+		q.setAct(false);
+		String[] possib = {"Something for kiddies, please!", "We have teen in the house"};
+		Question n = new Question("LITTLE KIDS OR YOUNG ADULTS?", possib);
+		Message.RomanticUI.setGUI(n);
+		insert(n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "48-th"
+	when
+		q: Question(content == "LITTLE KIDS OR YOUNG ADULTS?", 
+			picked_answer == "Something for kiddies, please!", act)
+	then
+		q.setAct(false);
+		String[] possib = {"My son wil barf!", "The girls would love that", "Something gender neutral"};
+		Question n = new Question("HOW ABOUT A PRINCESS MOVIE?", possib);
+		Message.RomanticUI.setGUI(n);
+		insert(n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "49-th"
+	when
+		q: Question(content == "LITTLE KIDS OR YOUNG ADULTS?", 
+			picked_answer == "We have teen in the house", act)
+	then
+		q.setAct(false);
+		String[] possib = {"Let's teach them a thing or two", "They rool their eyes at anything \"old\""};
+		Question n = new Question("CLASSIC OR 21ST CENTURY STORY?", possib);
+		Message.RomanticUI.setGUI(n);
+		insert(n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+
+rule "50-th"
+	when
+		q: Question(content == "CLASSIC OR 21ST CENTURY STORY?", 
+			picked_answer == "Let's teach them a thing or two", act)
+	then
+		q.setAct(false);
+		String[] possib = {"Audrey!", "Katherine!"};
+		Question n = new Question("PICK A HEPBURN", possib);
+		Message.RomanticUI.setGUI(n);
+		insert(n);
+		System.out.println(q.content + " ANSWER " + q.picked_answer);
+end
+	
 
 
 
@@ -443,4 +558,112 @@ rule "39-th"
 	then
 		q.setAct(false);
 		Message.RomanticUI.setGUI_answer(q, "Drinking Buddies");
+end
+
+rule "WALL-E"
+	when 
+		q : Question( content == "WITH ROBOTS OR HUMANS?", 
+			picked_answer == "Robots", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "WALL-E");
+end
+
+rule "Up"
+	when 
+		q : Question( content == "WITH ROBOTS OR HUMANS?", 
+			picked_answer == "Humans", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Up");
+end
+
+rule "Tangled"
+	when 
+		q : Question( content == "ARE YOU A LOVER OR A FIGHTER?", 
+			picked_answer == "Fighter", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Tangled");
+end
+
+rule "BeautyAndTheBest"
+	when 
+		q : Question( content == "ARE YOU A LOVER OR A FIGHTER?", 
+			picked_answer == "Lover", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Beauty and the Beast");
+end
+
+rule "It's a Wonderful Life"
+	when 
+		q : Question( content == "DO YOU LIKE BLACK & WHITE FILMS?", 
+			picked_answer == "Always love the classics", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "It's a Wonderful Life");
+end
+
+rule "The Holiday"
+	when 
+		q : Question( content == "HOW MANY LOVE TRIANGLES?", 
+			picked_answer == "More than two and it's hard to follow", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "The Holiday");
+end
+
+rule "Love Actually"
+	when 
+		q : Question( content == "HOW MANY LOVE TRIANGLES?", 
+			picked_answer == "I love complexity", act )
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Love Actually");
+end
+
+rule "Moonrise Kingdom"
+	when
+		q: Question(content == "HOW ABOUT A PRINCESS MOVIE?", 
+			picked_answer == "My son wil barf!", act)
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Moonrise Kingdom");
+end
+
+rule "Enchanted"
+	when
+		q: Question(content == "HOW ABOUT A PRINCESS MOVIE?", 
+			picked_answer == "The girls would love that", act)
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Enchanted");
+end
+
+rule "The Princess Bride"
+	when
+		q: Question(content == "HOW ABOUT A PRINCESS MOVIE?", 
+			picked_answer == "Something gender neutral", act)
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "The Princess Bride");
+end
+
+rule "Roman Holiday"
+	when
+		q: Question(content == "PICK A HEPBURN", 
+			picked_answer == "Audrey!", act)
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "Roman Holiday");
+end
+
+rule "The Philadelphia Story"
+	when
+		q: Question(content == "PICK A HEPBURN", 
+			picked_answer == "Katherine!", act)
+	then
+		q.setAct(false);
+		Message.RomanticUI.setGUI_answer(q, "The Philadelphia Story");
 end
