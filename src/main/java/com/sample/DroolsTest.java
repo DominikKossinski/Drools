@@ -14,40 +14,42 @@ import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.rule.FactHandle;
 
-import com.sample.DroolsTest.Message.RomanticUI;
+import com.sample.DroolsTest.RomanticUI;
 
 /**
  * This is a sample class to launch a rule.
  */
 public class DroolsTest {
 
+	public static Question active;
+	public static KieSession kSession;
+	
     public static final void main(String[] args) {
         try {
         	 // KieServices is the factory for all KIE services
 	        KieServices ks = KieServices.Factory.get();
 	        // From the kie services, a container is created from the classpath
     	    KieContainer kContainer = ks.getKieClasspathContainer();    
-        	KieSession kSession = kContainer.newKieSession("ksession-rules");     	
+        	kSession = kContainer.newKieSession("ksession-rules");     	
         	
-        	new Message().init(true, kSession);
+        	init(true);
             kSession.fireAllRules();
             
         } catch (Throwable t) {
             t.printStackTrace();
         }
     }
+    
+    public static void init( boolean exitOnClose) {
 
-    public static class Message {
+        RomanticUI ui = new RomanticUI( );
+        ui.createAndShowGUI(exitOnClose);
+	}
+
     	
-    	public static Question active;
-		private static KieSession kSession;
+    	
 
-		public void init( boolean exitOnClose, KieSession kSession) {
-
-	        RomanticUI ui = new RomanticUI( );
-	        ui.createAndShowGUI(exitOnClose);
-	        this.kSession = kSession;
-		}
+		
 
 		public static class RomanticUI extends JPanel implements ActionListener {
 			
@@ -120,7 +122,7 @@ public class DroolsTest {
 				
 				String question = n.content;
 				String[] possibilities = n.answers;
-				Message.active = n;
+				active = n;
 				
 				l2.setText(question);
 				
@@ -193,7 +195,7 @@ public class DroolsTest {
 				}
 			}
 		}
-    }
+    
     /**
      * Klasa której obiektem jest pytanie z dan¹ treœci¹ i mo¿liwymi odpowiedziami
      * dodatkowo rozró¿niamy pole picked_answer oznaczaj¹ce wybran¹ odpowiedz przez u¿ytkownika

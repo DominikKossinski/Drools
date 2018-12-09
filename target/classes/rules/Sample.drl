@@ -1,6 +1,6 @@
 package com.sample
  
-import com.sample.DroolsTest.Message;
+import com.sample.DroolsTest.RomanticUI;
 import com.sample.DroolsTest.Question;
 
 rule "Init"
@@ -9,7 +9,7 @@ rule "Init"
     then
         String[] possib = {"My main squeeze","My family"};
         Question n = new Question("WHO ARE YOU WATCHING IT WITH?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
         insert (n);
         System.out.println("First question!");
 end
@@ -23,7 +23,7 @@ rule "1-st"
 		q.setAct(false);
 		String[] possib = {"YES","NO"};
 		Question n = new Question("DO YOU CARE IF HE ENJOYS IT?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -36,7 +36,7 @@ rule "2-nd"
 		q.setAct(false);
 		String[] possib = {"I love explosions","Brains & Beauty","Let's stick to the 'com' in 'romcom'"};
 		Question n = new Question("ACTION PACKED OR THOUGHT PROVOKING?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -49,7 +49,7 @@ rule "3-rd"
 		q.setAct(false);
 		String[] possib = {"About face","NO"};
 		Question n = new Question("MILILTARY FAN?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -62,7 +62,7 @@ rule "4-th"
 		q.setAct(false);
 		String[] possib = {"Girls have muscle, too!","Male"};
 		Question n = new Question("MALE OR FEMALE LEAD?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -75,7 +75,7 @@ rule "5-th"
 		q.setAct(false);
 		String[] possib = {"YES","NO"};
 		Question n = new Question("STARRING AN IT GIRL?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -88,7 +88,7 @@ rule "6-th"
 		q.setAct(false);
 		String[] possib = {"Oui","NO"};
 		Question n = new Question("FOREIGN FILM?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -101,7 +101,7 @@ rule "7-th"
 		q.setAct(false);
 		String[] possib = {"Not crying... just allergies", "Prefer to laugh"};
 		Question n = new Question("TERAR JERKER?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -114,7 +114,7 @@ rule "8-th"
 		q.setAct(false);
 		String[] possib = {"NO", "Yummy"};
 		Question n = new Question("DO YOU LIKE BEER?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -127,7 +127,7 @@ rule "9-th"
 		q.setAct(false);
 		String[] possib = {"Pass", "Of course!"};
 		Question n = new Question("DO YOU LIKE ADAM SANDLER?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -140,7 +140,7 @@ rule "10-th"
 		q.setAct(false);
 		String[] possib = {"This one time...", "Nice girls never get the guy"};
 		Question n = new Question("GOOD OR BAD GIRL?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -153,7 +153,7 @@ rule "11-th"
 		q.setAct(false);
 		String[] possib = {"Classic Adam!", "Let's go new"};
 		Question n = new Question("90s or 2000s SANDLER?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -166,7 +166,7 @@ rule "12-th"
 		q.setAct(false);
 		String[] possib = {"Yes, please!","Pass"};
 		Question n = new Question("JUDD APATOW FILM?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -179,7 +179,7 @@ rule "13-th"
 		q.setAct(false);
 		String[] possib = {"Yes","Nah"};
 		Question n = new Question("THINKING OF MARRIAGE?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -192,7 +192,7 @@ rule "14-th"
 		q.setAct(false);
 		String[] possib = {"There's humor in sorrow","I see where this is headed"};
 		Question n = new Question("BROKEN UP OR KNOCKED UP?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -205,7 +205,7 @@ rule "15-th"
 		q.setAct(false);
 		String[] possib = {"Bromance is the best","Girl power!"};
 		Question n = new Question("GUYS ONLY?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -218,7 +218,7 @@ rule "16-th"
 		q.setAct(false);
 		String[] possib = {"Ya man!","NO"};
 		Question n = new Question("DO YOU LIKE FAKE JAMAICAN ACCENTS?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -231,7 +231,7 @@ rule "17-th"
 		q.setAct(false);
 		String[] possib = {"She's smitten!","She may be a little unaware"};
 		Question n = new Question("IS THE GIRL IN LOVE?",possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -243,7 +243,7 @@ rule "18-th"
 		q.setAct(false);
 		String[] possib = {"Yes", "No"};
 		Question n = new Question("DO YOU LIKE ANIMATION?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -255,7 +255,7 @@ rule "19-th"
 		q.setAct(false);
 		String[] possib = {"What about Burton?", "Pixar", "Disney"};
 		Question n = new Question("PIXAR OR DISNEY?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -267,7 +267,7 @@ rule "20-th"
 		q.setAct(false);
 		String[] possib = {"Robots", "Humans"};
 		Question n = new Question("WITH ROBOTS OR HUMANS?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -279,7 +279,7 @@ rule "21-st"
 		q.setAct(false);
 		String[] possib = {"Fighter", "Lover"};
 		Question n = new Question("ARE YOU A LOVER OR A FIGHTER?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -291,7 +291,7 @@ rule "22-nd"
 		q.setAct(false);
 		String[] possib = {"I wish it was Christmas everyday", "Not really"};
 		Question n = new Question("DO THE HOLIDAYS MAKE YOU SWOON?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -304,7 +304,7 @@ rule "23-rd"
 		q.setAct(false);
 		String[] possib = {"Maybe something more modern", "Always love the classics"};
 		Question n = new Question("DO YOU LIKE BLACK & WHITE FILMS?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -317,7 +317,7 @@ rule "24-th"
 		q.setAct(false);
 		String[] possib = {"More than two and it's hard to follow", "I love complexity"};
 		Question n = new Question("HOW MANY LOVE TRIANGLES?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -330,7 +330,7 @@ rule "25-th"
 		q.setAct(false);
 		String[] possib = {"Something for kiddies, please!", "We have teen in the house"};
 		Question n = new Question("LITTLE KIDS OR YOUNG ADULTS?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -343,7 +343,7 @@ rule "26-th"
 		q.setAct(false);
 		String[] possib = {"My son wil barf!", "The girls would love that", "Something gender neutral"};
 		Question n = new Question("HOW ABOUT A PRINCESS MOVIE?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -356,7 +356,7 @@ rule "27-th"
 		q.setAct(false);
 		String[] possib = {"Let's teach them a thing or two", "They rool their eyes at anything \"old\""};
 		Question n = new Question("CLASSIC OR 21ST CENTURY STORY?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -369,7 +369,7 @@ rule "28-th"
 		q.setAct(false);
 		String[] possib = {"Audrey!", "Katherine!"};
 		Question n = new Question("PICK A HEPBURN", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -382,7 +382,7 @@ rule "29-th"
 		q.setAct(false);
 		String[] possib = {"That could work", "Pass"};
 		Question n = new Question("WHAT IF IT'S ABOUT HIGH SCHOOL?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -395,7 +395,7 @@ rule "30-th"
 		q.setAct(false);
 		String[] possib = {"Definitely no", "We're basically the Von Trapp Family"};
 		Question n = new Question("DO THEY LIKE MUSICALS?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -408,7 +408,7 @@ rule "31-st"
 		q.setAct(false);
 		String[] possib = {"Yes, please", "A kiss isn't going to kill anyone"};
 		Question n = new Question("DO YOU WANT AVOID THE AWKWARD LOVE SCENES AT ALL COSTS?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -421,7 +421,7 @@ rule "32-nd"
 		q.setAct(false);
 		String[] possib = {"80s", "2000s"};
 		Question n = new Question("DO YOU PREFER 80S or 2000S?", possib);
-		Message.RomanticUI.setGUI(n);
+		RomanticUI.setGUI(n);
 		insert(n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
@@ -439,7 +439,7 @@ rule "The Notebook"
 		 	picked_answer == "NO", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "The Notebook");
+		RomanticUI.setGUI_answer(q, "The Notebook");
 end
 
 rule "Nightmare Before Christmas"
@@ -447,7 +447,7 @@ rule "Nightmare Before Christmas"
 		q: Question(content == "PIXAR OR DISNEY?", picked_answer == "What about Burton?")
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Nightmare Before Christmas");
+		RomanticUI.setGUI_answer(q, "Nightmare Before Christmas");
 end
 
 rule "Top Gun"
@@ -456,7 +456,7 @@ rule "Top Gun"
 			picked_answer == "About face", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Top Gun");
+		RomanticUI.setGUI_answer(q, "Top Gun");
 end
 
 rule "Silver Linings Playbooks"
@@ -465,7 +465,7 @@ rule "Silver Linings Playbooks"
 			picked_answer == "YES", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Silver Linings Playbooks");
+		RomanticUI.setGUI_answer(q, "Silver Linings Playbooks");
 end
 
 rule "Mr. and Mrs. Smith"
@@ -474,7 +474,7 @@ rule "Mr. and Mrs. Smith"
 			picked_answer == "Girls have muscle, too!", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Mr. and Mrs. Smith");
+		RomanticUI.setGUI_answer(q, "Mr. and Mrs. Smith");
 end
 
 rule "Bourne Identity"
@@ -483,7 +483,7 @@ rule "Bourne Identity"
 			picked_answer == "Male", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Bourne Identity");
+		RomanticUI.setGUI_answer(q, "Bourne Identity");
 end
 
 rule "Amelie"
@@ -492,7 +492,7 @@ rule "Amelie"
 			picked_answer == "Oui", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Amelie");
+		RomanticUI.setGUI_answer(q, "Amelie");
 end
 
 rule "This is 40"
@@ -501,7 +501,7 @@ rule "This is 40"
 			picked_answer == "Yes", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "This is 40");
+		RomanticUI.setGUI_answer(q, "This is 40");
 end
 
 rule "Eternal Sunshine of the Spotless Mind"
@@ -510,7 +510,7 @@ rule "Eternal Sunshine of the Spotless Mind"
 			picked_answer == "Not crying... just allergies", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Eternal Sunshine of the Spotless Mind");
+		RomanticUI.setGUI_answer(q, "Eternal Sunshine of the Spotless Mind");
 end
 
 rule "Forgetting Sarah Marshall"
@@ -519,7 +519,7 @@ rule "Forgetting Sarah Marshall"
 			picked_answer == "There's humor in sorrow", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Forgetting Sarah Marshall");
+		RomanticUI.setGUI_answer(q, "Forgetting Sarah Marshall");
 end
 
 rule "Knocked Up"
@@ -528,7 +528,7 @@ rule "Knocked Up"
 			picked_answer == "I see where this is headed", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Knocked Up");
+		RomanticUI.setGUI_answer(q, "Knocked Up");
 end
 
 rule "I Love You, Man"
@@ -537,7 +537,7 @@ rule "I Love You, Man"
 			picked_answer == "Ya man!", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "I Love You, Man");
+		RomanticUI.setGUI_answer(q, "I Love You, Man");
 end
 
 rule "Don Jon"
@@ -546,7 +546,7 @@ rule "Don Jon"
 			picked_answer == "NO", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Don Jon");
+		RomanticUI.setGUI_answer(q, "Don Jon");
 end
 
 rule "Wedding Crashes"
@@ -555,7 +555,7 @@ rule "Wedding Crashes"
 			picked_answer == "She's smitten!", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Wedding Crashes");
+		RomanticUI.setGUI_answer(q, "Wedding Crashes");
 end
 
 rule "There's Something About Mary"
@@ -564,7 +564,7 @@ rule "There's Something About Mary"
 			picked_answer == "She may be a little unaware", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "There's Something About Mary");
+		RomanticUI.setGUI_answer(q, "There's Something About Mary");
 end
 
 rule "American Pie"
@@ -573,7 +573,7 @@ rule "American Pie"
 			picked_answer == "This one time...", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "American Pie");
+		RomanticUI.setGUI_answer(q, "American Pie");
 end
 
 rule "Girl Next Door"
@@ -582,7 +582,7 @@ rule "Girl Next Door"
 			picked_answer == "Nice girls never get the guy", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Girl Next Door");
+		RomanticUI.setGUI_answer(q, "Girl Next Door");
 end
 
 rule "Wedding Singer"
@@ -591,7 +591,7 @@ rule "Wedding Singer"
 			picked_answer == "Classic Adam!", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Wedding Singer");
+		RomanticUI.setGUI_answer(q, "Wedding Singer");
 end
 
 rule "Just Go With It"
@@ -600,7 +600,7 @@ rule "Just Go With It"
 			picked_answer == "Let's go new", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Just Go With It");
+		RomanticUI.setGUI_answer(q, "Just Go With It");
 end
 
 rule "Drinking Buddies"
@@ -609,7 +609,7 @@ rule "Drinking Buddies"
 			picked_answer == "Yummy", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Drinking Buddies");
+		RomanticUI.setGUI_answer(q, "Drinking Buddies");
 end
 
 rule "WALL-E"
@@ -618,7 +618,7 @@ rule "WALL-E"
 			picked_answer == "Robots", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "WALL-E");
+		RomanticUI.setGUI_answer(q, "WALL-E");
 end
 
 rule "Up"
@@ -627,7 +627,7 @@ rule "Up"
 			picked_answer == "Humans", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Up");
+		RomanticUI.setGUI_answer(q, "Up");
 end
 
 rule "Tangled"
@@ -636,7 +636,7 @@ rule "Tangled"
 			picked_answer == "Fighter", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Tangled");
+		RomanticUI.setGUI_answer(q, "Tangled");
 end
 
 rule "BeautyAndTheBest"
@@ -645,7 +645,7 @@ rule "BeautyAndTheBest"
 			picked_answer == "Lover", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Beauty and the Beast");
+		RomanticUI.setGUI_answer(q, "Beauty and the Beast");
 end
 
 rule "It's a Wonderful Life"
@@ -654,7 +654,7 @@ rule "It's a Wonderful Life"
 			picked_answer == "Always love the classics", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "It's a Wonderful Life");
+		RomanticUI.setGUI_answer(q, "It's a Wonderful Life");
 end
 
 rule "The Holiday"
@@ -663,7 +663,7 @@ rule "The Holiday"
 			picked_answer == "More than two and it's hard to follow", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "The Holiday");
+		RomanticUI.setGUI_answer(q, "The Holiday");
 end
 
 rule "Love Actually"
@@ -672,7 +672,7 @@ rule "Love Actually"
 			picked_answer == "I love complexity", act )
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Love Actually");
+		RomanticUI.setGUI_answer(q, "Love Actually");
 end
 
 rule "Moonrise Kingdom"
@@ -681,7 +681,7 @@ rule "Moonrise Kingdom"
 			picked_answer == "My son wil barf!", act)
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Moonrise Kingdom");
+		RomanticUI.setGUI_answer(q, "Moonrise Kingdom");
 end
 
 rule "Enchanted"
@@ -690,7 +690,7 @@ rule "Enchanted"
 			picked_answer == "The girls would love that", act)
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Enchanted");
+		RomanticUI.setGUI_answer(q, "Enchanted");
 end
 
 rule "The Princess Bride"
@@ -699,7 +699,7 @@ rule "The Princess Bride"
 			picked_answer == "Something gender neutral", act)
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "The Princess Bride");
+		RomanticUI.setGUI_answer(q, "The Princess Bride");
 end
 
 rule "Roman Holiday"
@@ -708,7 +708,7 @@ rule "Roman Holiday"
 			picked_answer == "Audrey!", act)
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Roman Holiday");
+		RomanticUI.setGUI_answer(q, "Roman Holiday");
 end
 
 rule "The Philadelphia Story"
@@ -717,7 +717,7 @@ rule "The Philadelphia Story"
 			picked_answer == "Katherine!", act)
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "The Philadelphia Story");
+		RomanticUI.setGUI_answer(q, "The Philadelphia Story");
 end
 
 rule "10 Things I Hate About you"
@@ -726,7 +726,7 @@ rule "10 Things I Hate About you"
 			picked_answer == "That could work", act)
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "10 Things I Hate About you");
+		RomanticUI.setGUI_answer(q, "10 Things I Hate About you");
 end
 
 rule "Meet the Parents"
@@ -735,7 +735,7 @@ rule "Meet the Parents"
 			picked_answer == "Yes, please", act)
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Meet the Parents");
+		RomanticUI.setGUI_answer(q, "Meet the Parents");
 end
 
 rule "Juno"
@@ -744,7 +744,7 @@ rule "Juno"
 			picked_answer == "A kiss isn't going to kill anyone", act)
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Juno");
+		RomanticUI.setGUI_answer(q, "Juno");
 end
 
 rule "Hairspray"
@@ -753,7 +753,7 @@ rule "Hairspray"
 			picked_answer == "80s", act)
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Hairspray");
+		RomanticUI.setGUI_answer(q, "Hairspray");
 end
 
 rule "Mamma Mia"
@@ -762,5 +762,5 @@ rule "Mamma Mia"
 			picked_answer == "2000s", act)
 	then
 		q.setAct(false);
-		Message.RomanticUI.setGUI_answer(q, "Mamma Mia");
+		RomanticUI.setGUI_answer(q, "Mamma Mia");
 end
