@@ -15,7 +15,7 @@ rule "Init"
 end
 
 
-rule "1-st"
+rule "WHO ARE YOU WATCHING IT WITH? My main squeeze"
 	when 
 		q : Question( content == "WHO ARE YOU WATCHING IT WITH?", 
 			picked_answer == "My main squeeze", act)
@@ -28,7 +28,7 @@ rule "1-st"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "2-nd"
+rule "DO YOU CARE IF HE ENJOYS IT? Yes"
 	when 
 		q : Question( content == "DO YOU CARE IF HE ENJOYS IT?",
 		 	picked_answer == "YES", act )
@@ -41,7 +41,7 @@ rule "2-nd"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "3-rd"
+rule "ACTION PACKED OR THOUGHT PROVOKING? I love explosions"
 	when 
 		q : Question( content == "ACTION PACKED OR THOUGHT PROVOKING?", 
 			picked_answer == "I love explosions", act )
@@ -54,7 +54,7 @@ rule "3-rd"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "4-th"
+rule "MILILTARY FAN? NO"
 	when 
 		q : Question( content == "MILILTARY FAN?", 
 			picked_answer == "NO", act )
@@ -67,7 +67,7 @@ rule "4-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "5-th"
+rule "ACTION PACKED OR THOUGHT PROVOKING? Brains & Beauty"
 	when 
 		q : Question( content == "ACTION PACKED OR THOUGHT PROVOKING?", 
 			picked_answer == "Brains & Beauty", act )
@@ -80,7 +80,7 @@ rule "5-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "6-th"
+rule "STARRING AN IT GIRL? NO"
 	when 
 		q : Question( content == "STARRING AN IT GIRL?", 
 			picked_answer == "NO", act )
@@ -93,7 +93,7 @@ rule "6-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "7-th"
+rule "FOREIGN FILM? NO"
 	when 
 		q : Question( content == "FOREIGN FILM?", 
 			picked_answer == "NO", act )
@@ -106,7 +106,7 @@ rule "7-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "8-th"
+rule "TERAR JERKER? Prefer to laugh"
 	when 
 		q : Question( content == "TERAR JERKER?", 
 			picked_answer == "Prefer to laugh", act )
@@ -119,7 +119,7 @@ rule "8-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "9-th"
+rule "DO YOU LIKE BEER? NO"
 	when 
 		q : Question( content == "DO YOU LIKE BEER?", 
 			picked_answer == "NO", act )
@@ -132,7 +132,7 @@ rule "9-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "10-th"
+rule "DO YOU LIKE ADAM SANDLER? Pass"
 	when 
 		q : Question( content == "DO YOU LIKE ADAM SANDLER?", 
 			picked_answer == "Pass", act )
@@ -145,7 +145,7 @@ rule "10-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "11-th"
+rule "DO YOU LIKE ADAM SANDLER? Of course!"
 	when 
 		q : Question( content == "DO YOU LIKE ADAM SANDLER?", 
 			picked_answer == "Of course!", act )
@@ -158,7 +158,7 @@ rule "11-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "12-th"
+rule "ACTION PACKED OR THOUGHT PROVOKING? Let's stick to the 'com' in 'romcom'"
 	when 
 		q : Question( content == "ACTION PACKED OR THOUGHT PROVOKING?", 
 			picked_answer == "Let's stick to the 'com' in 'romcom'", act )
@@ -171,7 +171,7 @@ rule "12-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "13-th"
+rule "JUDD APATOW FILM? Yes, please!"
 	when 
 		q : Question( content == "JUDD APATOW FILM?", 
 			picked_answer == "Yes, please!", act )
@@ -184,7 +184,7 @@ rule "13-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "14-th"
+rule "THINKING OF MARRIAGE? Nah"
 	when 
 		q : Question( content == "THINKING OF MARRIAGE?", 
 			picked_answer == "Nah", act )
@@ -197,7 +197,7 @@ rule "14-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "15-th"
+rule "JUDD APATOW FILM? Pass"
 	when 
 		q : Question( content == "JUDD APATOW FILM?", 
 			picked_answer == "Pass", act )
@@ -210,7 +210,7 @@ rule "15-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "16-th"
+rule "GUYS ONLY? Bromance is the best"
 	when 
 		q : Question( content == "GUYS ONLY?", 
 			picked_answer == "Bromance is the best", act )
@@ -223,7 +223,7 @@ rule "16-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "17-th"
+rule "GUYS ONLY? Girl power!"
 	when 
 		q : Question( content == "GUYS ONLY?", 
 			picked_answer == "Girl power!", act )
@@ -236,9 +236,10 @@ rule "17-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "18-th"
+rule "WHO ARE YOU WATCHING IT WITH? My family"
 	when
-		q: Question(content == "WHO ARE YOU WATCHING IT WITH?", picked_answer == "My family", act)
+		q: Question(content == "WHO ARE YOU WATCHING IT WITH?", 
+			picked_answer == "My family", act)
 	then
 		q.setAct(false);
 		String[] possib = {"Yes", "No"};
@@ -248,7 +249,7 @@ rule "18-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "19-th"
+rule "DO YOU LIKE ANIMATION? Yes"
 	when
 		q: Question(content == "DO YOU LIKE ANIMATION?", picked_answer == "Yes", act)
 	then
@@ -260,7 +261,7 @@ rule "19-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "20-th"
+rule "PIXAR OR DISNEY? Pixar"
 	when
 		q: Question(content == "PIXAR OR DISNEY?", picked_answer == "Pixar", act)
 	then
@@ -272,7 +273,7 @@ rule "20-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "21-st"
+rule "PIXAR OR DISNEY? Disney"
 	when
 		q: Question(content == "PIXAR OR DISNEY?", picked_answer == "Disney", act)
 	then
@@ -284,7 +285,7 @@ rule "21-st"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "22-nd"
+rule "DO YOU LIKE ANIMATION? No"
 	when
 		q: Question(content == "DO YOU LIKE ANIMATION?", picked_answer == "No", act)
 	then
@@ -296,7 +297,7 @@ rule "22-nd"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "23-rd"
+rule "DO THE HOLIDAYS MAKE YOU SWOON? I wish it was Christmas everyday"
 	when
 		q: Question(content == "DO THE HOLIDAYS MAKE YOU SWOON?", 
 			picked_answer == "I wish it was Christmas everyday", act)
@@ -309,7 +310,7 @@ rule "23-rd"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "24-th"
+rule "DO YOU LIKE BLACK & WHITE FILMS? Maybe something more modern"
 	when
 		q: Question(content == "DO YOU LIKE BLACK & WHITE FILMS?", 
 			picked_answer == "Maybe something more modern", act)
@@ -322,7 +323,7 @@ rule "24-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "25-th"
+rule "DO THE HOLIDAYS MAKE YOU SWOON? Not really"
 	when
 		q: Question(content == "DO THE HOLIDAYS MAKE YOU SWOON?", 
 			picked_answer == "Not really", act)
@@ -335,7 +336,7 @@ rule "25-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "26-th"
+rule "LITTLE KIDS OR YOUNG ADULTS? Something for kiddies, please!"
 	when
 		q: Question(content == "LITTLE KIDS OR YOUNG ADULTS?", 
 			picked_answer == "Something for kiddies, please!", act)
@@ -348,7 +349,7 @@ rule "26-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "27-th"
+rule "LITTLE KIDS OR YOUNG ADULTS? We have teen in the house"
 	when
 		q: Question(content == "LITTLE KIDS OR YOUNG ADULTS?", 
 			picked_answer == "We have teen in the house", act)
@@ -361,7 +362,7 @@ rule "27-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "28-th"
+rule "CLASSIC OR 21ST CENTURY STORY? Let's teach them a thing or two"
 	when
 		q: Question(content == "CLASSIC OR 21ST CENTURY STORY?", 
 			picked_answer == "Let's teach them a thing or two", act)
@@ -374,7 +375,7 @@ rule "28-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "29-th"
+rule "CLASSIC OR 21ST CENTURY STORY? They rool their eyes at anything \"old\""
 	when
 		q: Question(content == "CLASSIC OR 21ST CENTURY STORY?", 
 			picked_answer == "They rool their eyes at anything \"old\"", act)
@@ -387,7 +388,7 @@ rule "29-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "30-th"
+rule "WHAT IF IT'S ABOUT HIGH SCHOOL? Pass"
 	when
 		q: Question(content == "WHAT IF IT'S ABOUT HIGH SCHOOL?", 
 			picked_answer == "Pass", act)
@@ -400,7 +401,7 @@ rule "30-th"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "31-st"
+rule "DO THEY LIKE MUSICALS? Definitely no"
 	when
 		q: Question(content == "DO THEY LIKE MUSICALS?", 
 			picked_answer == "Definitely no", act)
@@ -413,7 +414,7 @@ rule "31-st"
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
 end
 
-rule "32-nd"
+rule "DO THEY LIKE MUSICALS? We're basically the Von Trapp Family"
 	when
 		q: Question(content == "DO THEY LIKE MUSICALS?", 
 			picked_answer == "We're basically the Von Trapp Family", act)

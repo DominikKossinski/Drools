@@ -13,6 +13,7 @@ import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.rule.FactHandle;
+import org.kie.api.logger.*;
 
 import com.sample.DroolsTest.RomanticUI;
 
@@ -23,6 +24,8 @@ public class DroolsTest {
 
 	public static Question active;
 	public static KieSession kSession;
+	public static KieRuntimeLogger kLogger;
+	
 	
     public static final void main(String[] args) {
         try {
@@ -31,6 +34,7 @@ public class DroolsTest {
 	        // From the kie services, a container is created from the classpath
     	    KieContainer kContainer = ks.getKieClasspathContainer();    
         	kSession = kContainer.newKieSession("ksession-rules");     	
+        	kLogger = ks.getLoggers().newFileLogger(kSession, "test");
         	
         	init(true);
             kSession.fireAllRules();
@@ -152,6 +156,7 @@ public class DroolsTest {
 				ImageIcon icon = new ImageIcon(s+".jpg");
 				l1.setIcon(icon);
 				l1.setLocation(new Point(10,100));
+				kLogger.close();
 			}
 			
 
