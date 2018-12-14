@@ -19,7 +19,7 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>1</factId>
-      <objectToString>com.sample.DroolsTest$Question@185cd7</objectToString>
+      <objectToString>com.sample.DroolsTest$Question@6e57e95e</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
@@ -31,238 +31,176 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>1</factId>
-      <objectToString>com.sample.DroolsTest$Question@185cd7</objectToString>
+      <objectToString>com.sample.DroolsTest$Question@6e57e95e</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>WHO ARE YOU WATCHING IT WITH? My family [1]</activationId>
-      <rule>WHO ARE YOU WATCHING IT WITH? My family</rule>
-      <declarations>q=com.sample.DroolsTest$Question@185cd7</declarations>
+      <activationId>WHO ARE YOU WATCHING IT WITH? My main squeeze [1]</activationId>
+      <rule>WHO ARE YOU WATCHING IT WITH? My main squeeze</rule>
+      <declarations>q=com.sample.DroolsTest$Question@6e57e95e</declarations>
       <factHandleIds>1</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>WHO ARE YOU WATCHING IT WITH? My family [1]</activationId>
-      <rule>WHO ARE YOU WATCHING IT WITH? My family</rule>
-      <declarations>q=com.sample.DroolsTest$Question@185cd7</declarations>
+      <activationId>WHO ARE YOU WATCHING IT WITH? My main squeeze [1]</activationId>
+      <rule>WHO ARE YOU WATCHING IT WITH? My main squeeze</rule>
+      <declarations>q=com.sample.DroolsTest$Question@6e57e95e</declarations>
       <factHandleIds>1</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>2</factId>
-      <objectToString>com.sample.DroolsTest$Question@142b15b</objectToString>
+      <objectToString>com.sample.DroolsTest$Question@7db4ef06</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>WHO ARE YOU WATCHING IT WITH? My family [1]</activationId>
-      <rule>WHO ARE YOU WATCHING IT WITH? My family</rule>
-      <declarations>q=com.sample.DroolsTest$Question@185cd7</declarations>
+      <activationId>WHO ARE YOU WATCHING IT WITH? My main squeeze [1]</activationId>
+      <rule>WHO ARE YOU WATCHING IT WITH? My main squeeze</rule>
+      <declarations>q=com.sample.DroolsTest$Question@6e57e95e</declarations>
       <factHandleIds>1</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>2</factId>
-      <objectToString>com.sample.DroolsTest$Question@142b15b</objectToString>
+      <objectToString>com.sample.DroolsTest$Question@7db4ef06</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>DO YOU LIKE ANIMATION? No [2]</activationId>
-      <rule>DO YOU LIKE ANIMATION? No</rule>
-      <declarations>q=com.sample.DroolsTest$Question@142b15b</declarations>
+      <activationId>DO YOU CARE IF HE ENJOYS IT? Yes [2]</activationId>
+      <rule>DO YOU CARE IF HE ENJOYS IT? Yes</rule>
+      <declarations>q=com.sample.DroolsTest$Question@7db4ef06</declarations>
       <factHandleIds>2</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>DO YOU LIKE ANIMATION? No [2]</activationId>
-      <rule>DO YOU LIKE ANIMATION? No</rule>
-      <declarations>q=com.sample.DroolsTest$Question@142b15b</declarations>
+      <activationId>DO YOU CARE IF HE ENJOYS IT? Yes [2]</activationId>
+      <rule>DO YOU CARE IF HE ENJOYS IT? Yes</rule>
+      <declarations>q=com.sample.DroolsTest$Question@7db4ef06</declarations>
       <factHandleIds>2</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>3</factId>
-      <objectToString>com.sample.DroolsTest$Question@1d9616</objectToString>
+      <objectToString>com.sample.DroolsTest$Question@64346ff5</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>DO YOU LIKE ANIMATION? No [2]</activationId>
-      <rule>DO YOU LIKE ANIMATION? No</rule>
-      <declarations>q=com.sample.DroolsTest$Question@142b15b</declarations>
+      <activationId>DO YOU CARE IF HE ENJOYS IT? Yes [2]</activationId>
+      <rule>DO YOU CARE IF HE ENJOYS IT? Yes</rule>
+      <declarations>q=com.sample.DroolsTest$Question@7db4ef06</declarations>
       <factHandleIds>2</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>3</factId>
-      <objectToString>com.sample.DroolsTest$Question@1d9616</objectToString>
+      <objectToString>com.sample.DroolsTest$Question@64346ff5</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>DO THE HOLIDAYS MAKE YOU SWOON? Not really [3]</activationId>
-      <rule>DO THE HOLIDAYS MAKE YOU SWOON? Not really</rule>
-      <declarations>q=com.sample.DroolsTest$Question@1d9616</declarations>
+      <activationId>ACTION PACKED OR THOUGHT PROVOKING? Let&apos;s stick to the &apos;com&apos; in &apos;romcom&apos; [3]</activationId>
+      <rule>ACTION PACKED OR THOUGHT PROVOKING? Let&apos;s stick to the &apos;com&apos; in &apos;romcom&apos;</rule>
+      <declarations>q=com.sample.DroolsTest$Question@64346ff5</declarations>
       <factHandleIds>3</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>DO THE HOLIDAYS MAKE YOU SWOON? Not really [3]</activationId>
-      <rule>DO THE HOLIDAYS MAKE YOU SWOON? Not really</rule>
-      <declarations>q=com.sample.DroolsTest$Question@1d9616</declarations>
+      <activationId>ACTION PACKED OR THOUGHT PROVOKING? Let&apos;s stick to the &apos;com&apos; in &apos;romcom&apos; [3]</activationId>
+      <rule>ACTION PACKED OR THOUGHT PROVOKING? Let&apos;s stick to the &apos;com&apos; in &apos;romcom&apos;</rule>
+      <declarations>q=com.sample.DroolsTest$Question@64346ff5</declarations>
       <factHandleIds>3</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>4</factId>
-      <objectToString>com.sample.DroolsTest$Question@3c80c1</objectToString>
+      <objectToString>com.sample.DroolsTest$Question@3a2ef88d</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>DO THE HOLIDAYS MAKE YOU SWOON? Not really [3]</activationId>
-      <rule>DO THE HOLIDAYS MAKE YOU SWOON? Not really</rule>
-      <declarations>q=com.sample.DroolsTest$Question@1d9616</declarations>
+      <activationId>ACTION PACKED OR THOUGHT PROVOKING? Let&apos;s stick to the &apos;com&apos; in &apos;romcom&apos; [3]</activationId>
+      <rule>ACTION PACKED OR THOUGHT PROVOKING? Let&apos;s stick to the &apos;com&apos; in &apos;romcom&apos;</rule>
+      <declarations>q=com.sample.DroolsTest$Question@64346ff5</declarations>
       <factHandleIds>3</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>4</factId>
-      <objectToString>com.sample.DroolsTest$Question@3c80c1</objectToString>
+      <objectToString>com.sample.DroolsTest$Question@3a2ef88d</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>LITTLE KIDS OR YOUNG ADULTS? We have teen in the house [4]</activationId>
-      <rule>LITTLE KIDS OR YOUNG ADULTS? We have teen in the house</rule>
-      <declarations>q=com.sample.DroolsTest$Question@3c80c1</declarations>
+      <activationId>JUDD APATOW FILM? Pass [4]</activationId>
+      <rule>JUDD APATOW FILM? Pass</rule>
+      <declarations>q=com.sample.DroolsTest$Question@3a2ef88d</declarations>
       <factHandleIds>4</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>LITTLE KIDS OR YOUNG ADULTS? We have teen in the house [4]</activationId>
-      <rule>LITTLE KIDS OR YOUNG ADULTS? We have teen in the house</rule>
-      <declarations>q=com.sample.DroolsTest$Question@3c80c1</declarations>
+      <activationId>JUDD APATOW FILM? Pass [4]</activationId>
+      <rule>JUDD APATOW FILM? Pass</rule>
+      <declarations>q=com.sample.DroolsTest$Question@3a2ef88d</declarations>
       <factHandleIds>4</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>5</factId>
-      <objectToString>com.sample.DroolsTest$Question@6613e0</objectToString>
+      <objectToString>com.sample.DroolsTest$Question@14761862</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>LITTLE KIDS OR YOUNG ADULTS? We have teen in the house [4]</activationId>
-      <rule>LITTLE KIDS OR YOUNG ADULTS? We have teen in the house</rule>
-      <declarations>q=com.sample.DroolsTest$Question@3c80c1</declarations>
+      <activationId>JUDD APATOW FILM? Pass [4]</activationId>
+      <rule>JUDD APATOW FILM? Pass</rule>
+      <declarations>q=com.sample.DroolsTest$Question@3a2ef88d</declarations>
       <factHandleIds>4</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>5</factId>
-      <objectToString>com.sample.DroolsTest$Question@6613e0</objectToString>
+      <objectToString>com.sample.DroolsTest$Question@14761862</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>CLASSIC OR 21ST CENTURY STORY? They rool their eyes at anything &quot;old&quot; [5]</activationId>
-      <rule>CLASSIC OR 21ST CENTURY STORY? They rool their eyes at anything &quot;old&quot;</rule>
-      <declarations>q=com.sample.DroolsTest$Question@6613e0</declarations>
+      <activationId>GUYS ONLY? Bromance is the best [5]</activationId>
+      <rule>GUYS ONLY? Bromance is the best</rule>
+      <declarations>q=com.sample.DroolsTest$Question@14761862</declarations>
       <factHandleIds>5</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>CLASSIC OR 21ST CENTURY STORY? They rool their eyes at anything &quot;old&quot; [5]</activationId>
-      <rule>CLASSIC OR 21ST CENTURY STORY? They rool their eyes at anything &quot;old&quot;</rule>
-      <declarations>q=com.sample.DroolsTest$Question@6613e0</declarations>
+      <activationId>GUYS ONLY? Bromance is the best [5]</activationId>
+      <rule>GUYS ONLY? Bromance is the best</rule>
+      <declarations>q=com.sample.DroolsTest$Question@14761862</declarations>
       <factHandleIds>5</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>6</factId>
-      <objectToString>com.sample.DroolsTest$Question@2aa9e</objectToString>
+      <objectToString>com.sample.DroolsTest$Question@10a79394</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>CLASSIC OR 21ST CENTURY STORY? They rool their eyes at anything &quot;old&quot; [5]</activationId>
-      <rule>CLASSIC OR 21ST CENTURY STORY? They rool their eyes at anything &quot;old&quot;</rule>
-      <declarations>q=com.sample.DroolsTest$Question@6613e0</declarations>
+      <activationId>GUYS ONLY? Bromance is the best [5]</activationId>
+      <rule>GUYS ONLY? Bromance is the best</rule>
+      <declarations>q=com.sample.DroolsTest$Question@14761862</declarations>
       <factHandleIds>5</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>6</factId>
-      <objectToString>com.sample.DroolsTest$Question@2aa9e</objectToString>
+      <objectToString>com.sample.DroolsTest$Question@10a79394</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>WHAT IF IT&apos;S ABOUT HIGH SCHOOL? Pass [6]</activationId>
-      <rule>WHAT IF IT&apos;S ABOUT HIGH SCHOOL? Pass</rule>
-      <declarations>q=com.sample.DroolsTest$Question@2aa9e</declarations>
+      <activationId>Don Jon [6]</activationId>
+      <rule>Don Jon</rule>
+      <declarations>q=com.sample.DroolsTest$Question@10a79394</declarations>
       <factHandleIds>6</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>WHAT IF IT&apos;S ABOUT HIGH SCHOOL? Pass [6]</activationId>
-      <rule>WHAT IF IT&apos;S ABOUT HIGH SCHOOL? Pass</rule>
-      <declarations>q=com.sample.DroolsTest$Question@2aa9e</declarations>
+      <activationId>Don Jon [6]</activationId>
+      <rule>Don Jon</rule>
+      <declarations>q=com.sample.DroolsTest$Question@10a79394</declarations>
       <factHandleIds>6</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>7</factId>
-      <objectToString>com.sample.DroolsTest$Question@ab2c6e</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>WHAT IF IT&apos;S ABOUT HIGH SCHOOL? Pass [6]</activationId>
-      <rule>WHAT IF IT&apos;S ABOUT HIGH SCHOOL? Pass</rule>
-      <declarations>q=com.sample.DroolsTest$Question@2aa9e</declarations>
-      <factHandleIds>6</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>2</type>
-      <factId>7</factId>
-      <objectToString>com.sample.DroolsTest$Question@ab2c6e</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>DO THEY LIKE MUSICALS? We&apos;re basically the Von Trapp Family [7]</activationId>
-      <rule>DO THEY LIKE MUSICALS? We&apos;re basically the Von Trapp Family</rule>
-      <declarations>q=com.sample.DroolsTest$Question@ab2c6e</declarations>
-      <factHandleIds>7</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>DO THEY LIKE MUSICALS? We&apos;re basically the Von Trapp Family [7]</activationId>
-      <rule>DO THEY LIKE MUSICALS? We&apos;re basically the Von Trapp Family</rule>
-      <declarations>q=com.sample.DroolsTest$Question@ab2c6e</declarations>
-      <factHandleIds>7</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>8</factId>
-      <objectToString>com.sample.DroolsTest$Question@2b9372</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>DO THEY LIKE MUSICALS? We&apos;re basically the Von Trapp Family [7]</activationId>
-      <rule>DO THEY LIKE MUSICALS? We&apos;re basically the Von Trapp Family</rule>
-      <declarations>q=com.sample.DroolsTest$Question@ab2c6e</declarations>
-      <factHandleIds>7</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>2</type>
-      <factId>8</factId>
-      <objectToString>com.sample.DroolsTest$Question@2b9372</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Mamma Mia [8]</activationId>
-      <rule>Mamma Mia</rule>
-      <declarations>q=com.sample.DroolsTest$Question@2b9372</declarations>
-      <factHandleIds>8</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>Mamma Mia [8]</activationId>
-      <rule>Mamma Mia</rule>
-      <declarations>q=com.sample.DroolsTest$Question@2b9372</declarations>
-      <factHandleIds>8</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
   </events>
 </org.drools.core.audit.WorkingMemoryLog>

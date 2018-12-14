@@ -14,7 +14,6 @@ rule "Init"
         System.out.println("First question!");
 end
 
-
 rule "WHO ARE YOU WATCHING IT WITH? My main squeeze"
 	when 
 		q : Question( content == "WHO ARE YOU WATCHING IT WITH?", 
@@ -100,7 +99,7 @@ rule "FOREIGN FILM? NO"
 	then
 		q.setAct(false);
 		String[] possib = {"Not crying... just allergies", "Prefer to laugh"};
-		Question n = new Question("TERAR JERKER?",possib);
+		Question n = new Question("TEAR JERKER?",possib);
 		RomanticUI.setGUI(n);
 		insert (n);
 		System.out.println(q.content + " ANSWER " + q.picked_answer);
@@ -507,7 +506,7 @@ end
 
 rule "Eternal Sunshine of the Spotless Mind"
 	when 
-		q : Question( content == "TERAR JERKER FILM?", 
+		q : Question( content == "TEAR JERKER?", 
 			picked_answer == "Not crying... just allergies", act )
 	then
 		q.setAct(false);

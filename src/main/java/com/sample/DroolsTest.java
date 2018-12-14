@@ -50,11 +50,6 @@ public class DroolsTest {
         ui.createAndShowGUI(exitOnClose);
 	}
 
-    	
-    	
-
-		
-
 		public static class RomanticUI extends JPanel implements ActionListener {
 			
 			private static final long serialVersionUID = 510l;
